@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Citation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <section class="container">
+    <h1>Bienvenue sur notre site de Citation</h1>
+    <h2>Profiter des citation inspirantes à volonté</h2>
+
+    <section class="box">
+      <p id="citation">
+        "Je n'ai pas échoué. J'ai simplement trouvé 10 000 solutions qui ne fonctionnent pas." <strong>-Thomas Edison</strong> 
+      </p>-
+      <button id="btn-citation">Changer de citation</button>
+    </section>
+  </section>
+
+  <section class="events">
+    <h2>Liste des événements JavaScript</h2>
+
+    <section class="event-category">
+      <h3>1. Événements de souris (Mouse Events)</h3>
+      <ul>
+        <li><strong>click: </strong>  Lors d’un clic simple</li>
+        <li><strong>dblclick: </strong>  Lors d’un double clic</li>
+        <li><strong>mousedown:</strong>  Quand le bouton est enfoncé</li>
+        <li><strong>mouseup: </strong>  Quand le bouton est relâché</li>
+        <li><strong>mousemove: </strong>  Quand la souris bouge</li>
+        <li><strong>mouseover: </strong>  La souris entre dans un élément</li>
+        <li><strong>mouseout: </strong>  La souris quitte un élément</li>
+        <li><strong>mouseenter: </strong>  Comme mouseover, sans propagation</li>
+        <li><strong>mouseleave: </strong>  Comme mouseout, sans propagation</li>
+        <li><strong>contextmenu: </strong>  Clic droit (menu)</li>
+      </ul>
+    </section>
+
+    <section class="event-category">
+      <h3>2. Événements clavier (Keyboard Events)</h3>
+      <ul>
+        <li><strong>keydown: </strong>  Touche enfoncée</li>
+        <li><strong>keyup: </strong>  Touche relâchée</li>
+        <li><strong>keypress: </strong>  (Obsolète) Touche imprimable</li>
+      </ul>
+    </section>
+
+    <section class="event-category">
+      <h3>3. Événements de formulaire (Form Events)</h3>
+      <ul>
+        <li><strong>submit: </strong>  Soumission du formulaire</li>
+        <li><strong>reset: </strong>  Réinitialisation</li>
+        <li><strong>focus: </strong>  Élément prend le focus</li>
+        <li><strong>blur: </strong>  Élément perd le focus</li>
+        <li><strong>change: </strong>  Valeur d’un champ change</li>
+        <li><strong>input: </strong>  Modification d’un champ</li>
+        <li><strong>invalid: </strong>  Champ invalide</li>
+      </ul>
+    </section>
+
+    <section class="event-category">
+      <h3>4. Événements de fenêtre (Window Events)</h3>
+      <ul>
+        <li><strong>load: </strong>  Page chargée</li>
+        <li><strong>unload: </strong>  Page quittée</li>
+        <li><strong>resize: </strong>  Fenêtre redimensionnée</li>
+        <li><strong>scroll: </strong>  Défilement</li>
+        <li><strong>beforeunload: </strong>  Avant fermeture de page</li>
+        <li><strong>hashchange: </strong>  Changement d’ancre URL</li>
+      </ul>
+    </section>
+
+    <section class="event-category">
+      <h3>5. Événements Drag & Drop</h3>
+      <ul>
+        <li><strong>dragstart: </strong>  Début du glissement</li>
+        <li><strong>drag: </strong>  Glissement en cours</li>
+        <li><strong>dragend: </strong>  Fin du glissement</li>
+        <li><strong>dragenter: </strong>  Entrée dans la zone cible</li>
+        <li><strong>dragover: </strong>  Au-dessus de la zone</li>
+        <li><strong>dragleave: </strong>  Quitte la zone cible</li>
+        <li><strong>drop: </strong>  Élément lâché</li>
+      </ul>
+    </section>
+
+    <section class="event-category">
+      <h3>6. Événements tactiles (Touch Events)</h3>
+      <ul>
+        <li><strong>touchstart: </strong>  Début d’un contact</li>
+        <li><strong>touchmove: </strong>  Mouvement tactile</li>
+        <li><strong>touchend: </strong>  Fin du contact</li>
+        <li><strong>touchcancel: </strong>  Annulation</li>
+      </ul>
+    </section>
+
+    <section class="event-category">
+      <h3>7. Événements média</h3>
+      <ul>
+        <li><strong>play: </strong>  Lecture lancée</li>
+        <li><strong>pause: </strong>  Lecture en pause</li>
+        <li><strong>ended: </strong>  Lecture terminée</li>
+        <li><strong>volumechange: </strong>  Volume modifié</li>
+        <li><strong>timeupdate: </strong>  Temps mis à jour</li>
+        <li><strong>loadeddata: </strong>  Données prêtes</li>
+        <li><strong>canplay: </strong>  Peut jouer</li>
+      </ul>
+    </section>
+
+    <section class="event-category">
+      <h3>8. Événements d’animation (CSS)</h3>
+      <ul>
+        <li><strong>animationstart: </strong>  Début animation</li>
+        <li><strong>animationend: </strong>  Fin animation</li>
+        <li><strong>animationiteration: </strong>  Nouvelle boucle</li>
+        <li><strong>transitionend<: /strong>  Fin de transition</li>
+      </ul>
+    </section>
+
+    <section class="event-category">
+      <h3>9. Autres événements utiles</h3>
+      <ul>
+        <li><strong>error: </strong>  Erreur survenue</li>
+        <li><strong>abort: </strong>  Chargement annulé</li>
+        <li><strong>wheel: </strong>  Molette utilisée</li>
+        <li><strong>pointerdown: </strong>  Appui (souris/stylet)</li>
+        <li><strong>pointerup: </strong>  Relâchement</li>
+        <li><strong>pointermove: </strong>  Mouvement</li>
+      </ul>
+    </section>
+  </section>
+
+  
+</body>
+</html>
