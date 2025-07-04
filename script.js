@@ -19,15 +19,21 @@ const citations = [
   "Ce n’est pas la montagne que nous conquérons, mais nous-mêmes. - Edmund Hillary"
 ];
 
-// Récupération des éléments HTML (ID présents dans index.html)
+// Récupération des éléments HTML
 const citationElement = document.getElementById("citation");
 const boutonCitation = document.getElementById("btn-citation");
 
-// Fonction qui affiche une citation aléatoire
+// Fonction qui affiche une citation aléatoire formatée
 function afficherCitation() {
   const indexAleatoire = Math.floor(Math.random() * citations.length);
-  citationElement.textContent = citations[indexAleatoire];
+  const citationComplete = citations[indexAleatoire];
+
+  // Séparation en citation et auteur via split('-')
+  const [texte, auteur] = citationComplete.split(" - ");
+
+  // Mise à jour du contenu HTML avec balisage
+  citationElement.innerHTML = `<span>"${texte.trim()}"</span> <strong>- ${auteur.trim()}</strong>`;
 }
 
-//  Ajout d'un écouteur d'événement sur le bouton
-boutonCitation.addEventListener("click", (afficherCitation));
+// Lancer au clic
+boutonCitation.addEventListener("click", afficherCitation);
